@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://test.osakhi.ai/sitemap.xml
