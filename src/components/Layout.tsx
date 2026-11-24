@@ -1,5 +1,6 @@
 import React from 'react';
 import { siteConfig } from '../data/siteConfig';
+import { Ambient3DBackground } from './Ambient3DBackground';
 
 interface LayoutProps {
   currentSlug: string;
@@ -8,7 +9,8 @@ interface LayoutProps {
 
 export function Layout({ currentSlug, children }: LayoutProps) {
   return (
-    <>
+    <div className="page-shell">
+      <Ambient3DBackground />
       <header className="site-header">
         <div className="container nav-inner">
           <a href="/" className="brand-link">
@@ -48,6 +50,6 @@ export function Layout({ currentSlug, children }: LayoutProps) {
           </p>
         </div>
       </footer>
-    </>
+    </div>
   );
 }

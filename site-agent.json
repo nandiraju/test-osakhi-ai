@@ -2,7 +2,11 @@
   "$comment": "Managed by Site Launch Agent. Add file paths to \"preserve\" to stop the agent from overwriting them on future runs.",
   "domain": "test.osakhi.ai",
   "siteName": "Patient Page",
-  "preserve": [],
+  "preserve": [
+    "src/App.tsx",
+    "src/index.css",
+    "src/components/Layout.tsx"
+  ],
   "generatedFiles": [
     "package.json",
     "tsconfig.json",
